@@ -1,0 +1,9 @@
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+// Create your own map
+$custom-colors: (
+  "rosap": #ffc0cb
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);

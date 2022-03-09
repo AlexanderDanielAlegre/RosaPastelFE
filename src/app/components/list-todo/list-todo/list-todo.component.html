@@ -1,0 +1,25 @@
+<div class="row mt-3">
+  <div class="col-lg-6">
+    <h3>Listado de Tareas</h3>
+  </div>
+  <div class="col-lg-6">
+<!-- <button class="btn btn-primary float-end">Nueva Tarea</button> -->
+  </div>
+</div>
+
+<table class="table table-hover mt3">
+  <thead>
+    <tr>
+      <td>Titulo</td>
+      <td>Creador</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let tarea of listTareas">
+      <td>{{tarea.name}}</td>
+      <td>{{tarea.creator}}</td>
+    </tr>
+  </tbody>
+</table>
+
+

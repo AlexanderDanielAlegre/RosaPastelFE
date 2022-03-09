@@ -1,0 +1,19 @@
+<!-- <h3 class="mt-3">Todo List</h3> -->
+<form [formGroup]="agregarTarea" >
+  <!-- (ngSubmit)="agregar()" -->
+<!-- <form action=""> -->
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Tarea</label>
+    <input formControlName="tarea" type="text" class="form-control" id="tarea" placeholder="Nueva Tarea">
+    <span *ngIf="agregarTarea.get('tarea')?.invalid && agregarTarea.get('tarea')?.touched" class="text-danger">
+      La tarea es requerida
+    </span>
+  </div>
+  <div class="mb-5">
+    <button type="submit" class="btn btn-primary float-end" (click)="agregar()">aceptar</button>
+    <button type="button" class="btn btn-secondary">volver</button>
+  </div>
+</form>
+<div class="mb-3">
+<app-list-todo></app-list-todo>
+</div>

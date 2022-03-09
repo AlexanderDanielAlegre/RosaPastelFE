@@ -1,0 +1,14 @@
+<h3 class="mt-3">Crear Usuario</h3>
+<form [formGroup]="UsuarioDtoform" (ngSubmit)="createUser()">
+<div class="mb-3">
+<label for="Name" class="form-label">Nombre</label>
+<input formControlName="Name" type="text" class="form-control" id="Name" placeholder="Nombre">
+<label for="Address" class="form-label">Nombre</label>
+<input formControlName="Address" type="text" class="form-control" id="Address" placeholder="Direccion">
+</div>
+<div class="mb-3">
+  <button type="submit" class="btn btn-primary float-end">aceptar</button>
+  <button type="button" class="btn btn-secondary">volver</button>
+</div>
+</form>
+
